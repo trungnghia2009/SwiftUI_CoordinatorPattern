@@ -1,0 +1,46 @@
+[
+    {
+        "regionId": 1,
+        "regionName": "America",
+        "countries": [
+            {
+                "isoCode": "us",
+                "name": "USA",
+                "legalEntityCountryIsoCode": "us"
+            }
+        ]
+    },
+    {
+        "regionId": 2,
+        "regionName": "Europe",
+        "countries": [
+            {
+                "isoCode": "de",
+                "name": "Germany",
+                "legalEntityCountryIsoCode": "de"
+            },
+            {
+                "isoCode": "fr",
+                "name": "France",
+                "legalEntityCountryIsoCode": "fr"
+            }
+        ]
+    },
+    {
+        "regionId": 3,
+        "regionName": "Asia",
+        "countries": [
+            {
+                "isoCode": "cn",
+                "name": "China",
+                "legalEntityCountryIsoCode": "cn"
+            },
+            {
+                "isoCode": "in",
+                "name": "India",
+                "legalEntityCountryIsoCode": "in"
+            }
+        ]
+    }
+]
+
