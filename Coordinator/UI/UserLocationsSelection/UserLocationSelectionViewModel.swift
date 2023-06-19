@@ -1,5 +1,9 @@
-// Copyright (c) 2023 Bosch. All rights reserved
-// Created 2023
+//
+//  UserLocationSelectionViewModel.swift
+//  Coordinator
+//
+//  Created by trungnghia on 14/06/2023.
+//
 
 import Factory
 import SwiftUI
@@ -15,7 +19,11 @@ class UserLocationSelectionViewModel: ObservableObject {
         }
     }
 
-    @Injected(\.userService) var userService
+    private let userService: UserService
+
+    init(userService: UserService = DefaultUserService()) {
+        self.userService = userService
+    }
 
     private var selectedCountryCode: String = ""
     private var dataSource: [String: [String]] = [:]

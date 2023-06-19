@@ -12,9 +12,4 @@ extension Container {
     var userService: Factory<UserService> {
         Factory(self) { DefaultUserService() }
     }
-
-    var coordinator: Factory<Coordinator> {
-        Factory(self) { Coordinator() }
-            .shared
-    }
 }

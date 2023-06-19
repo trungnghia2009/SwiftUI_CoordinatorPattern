@@ -41,12 +41,12 @@ struct UserLoginScreen: View {
 
         }
         .toolbar {
-            // Delete button --> go to Location Selection
+            // Location button --> go to Location Selection
             NavigationLink(value: Screen.userLocationSelection) {
-                Image(systemName: "delete.right")
+                Image(systemName: "location.fill.viewfinder")
             }
 
-            // Setting button --> go to Seetings
+            // Setting button --> go to Settings
             NavigationLink(value: Screen.userSetting) {
                 Image(systemName: "gearshape")
             }

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Factory
 
 enum Screen: Identifiable {
     case userLocationSelection
@@ -75,7 +76,7 @@ final class Coordinator: ObservableObject {
     func build(_ screen: Screen) -> some View {
         switch screen {
         case .userLocationSelection:
-            let viewModel = UserLocationSelectionViewModel()
+            let viewModel = UserLocationSelectionViewModel(userService: Container.shared.userService())
             UserLocationSelectionScreen(viewModel: viewModel)
         case .userLogin:
             let viewModel = UserLoginViewModel()
